@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Heebo', sans-serif;
+}
+body {
+  background-color: aqua;
+}
+header {
+  background-color: purple;
+  height: 80px;
+}
+header #navbar {
+  display: flex;
+  background-color: gold;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header #navbar .navbrand {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+header #navbar .nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header #navbar .nav-list .nav-item a:hover {
+  color: green;
+  transition: 0.5s;
+}
+main {
+  margin-top: 6 rem;
+}
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0, 2 rem;
+  margin: 0 auto;
+}
+main #banner .banner-content .banner-content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+  color: limegreen;
+}
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 500px;
+  margin-bottom: 40px;
+  color: purple;
+}
+main #banner .banner-content .banner-content-btn {
+  background-color: limegreen;
+  color: gold;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+}
+main #banner .banner-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+}
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5em;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+section #post {
+  margin-top: 71px;
+  background-color: blue;
+}
+#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#posts .posts-content .post-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 2rem 0;
+}
+#posts .posts-content .post-content-header .section-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: limegreen;
+}
+
+#posts .posts-content .post-content-header .view-all-link {
+  text-decoration: none;
+  color: blue;
+}
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 20px;
+}
+#posts .posts-content .posts-cards .post-card {
+  background-color: lightgreen;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#posts .posts-content .posts-cards .post-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+  color: scarletblue;
+}
+#posts .posts-content .posts-cards .post-card span {
+  font-size: 18px;
+  font-weight: 400;
+  color: purple;
+  margin-bottom: 24px;
+  display: block;
+}
+@media (max-width: 740px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
