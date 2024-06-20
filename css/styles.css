@@ -81,6 +81,12 @@ main #banner .banner-content .banner-content-btn {
   padding: 10px 30px;
   border: none;
 }
+main #banner .banner-content .banner-content-btn:hover {
+  background-color: purple;
+  color: deepyellow;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 main #banner .banner-image {
   border-radius: 50%;
   width: 100%;
